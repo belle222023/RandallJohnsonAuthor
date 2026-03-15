@@ -200,12 +200,13 @@ if (contactForm) {
         const message = document.getElementById('message').value;
         const gmailSubject = `New Contact Form Submission: ${subject}`;
         const gmailBody    = `From: ${name} (${email})\n\nMessage:\n${message}`;
-        const gmailLink    = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=jussabellejumag13@gmail.com&su=${encodeURIComponent(gmailSubject)}&body=${encodeURIComponent(gmailBody)}`;
+        const gmailLink    = `https://mail.google.com/mail/u/0/?view=cm&fs=1&to=r.s.johnson.author@gmail.com&su=${encodeURIComponent(gmailSubject)}&body=${encodeURIComponent(gmailBody)}`;
         window.open(gmailLink, '_blank');
         this.reset();
         alert('Opening Gmail... Your message details have been prepared. Please complete sending in your Gmail inbox.');
     });
 }
+
 
 // ===== SMOOTH SCROLL for anchor links =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
