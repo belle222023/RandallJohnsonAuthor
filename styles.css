@@ -1,5 +1,5 @@
 /* ============================================================
-   R.S. JOHNSON — AUTHOR WEBSITE
+   RANDALL S. JOHNSON — AUTHOR WEBSITE
    styles.css  |  Mobile-first responsive + global background
    ============================================================ */
 
@@ -744,7 +744,7 @@ nav {
 }
 
 .about-portrait::after {
-    content: 'R.S. JOHNSON';
+    content: 'RANDALL S. JOHNSON';
     position: absolute; bottom: 0; left: 0; right: 0;
     background: linear-gradient(0deg, rgba(13,10,6,.95) 60%, transparent);
     padding: 3rem 1.5rem 1.5rem;
@@ -1137,24 +1137,34 @@ nav {
 
 .form-group label {
     display: block; margin-bottom: .6rem;
-    font-family: 'Cinzel', serif; font-size: .7rem;
-    letter-spacing: 2px; color: var(--gold);
+    font-family: 'Cinzel', serif; font-size: .75rem;
+    letter-spacing: 2px; color: var(--gold-light);
+    font-weight: 600;
+    text-shadow: 0 0 12px rgba(232, 201, 122, 0.25);
 }
 
 .form-group input,
 .form-group textarea {
     width: 100%; padding: 1rem 1.2rem;
-    background: rgba(201,168,76,.04);
-    border: 1px solid rgba(201,168,76,.2);
+    background: rgba(201,168,76,.06);
+    border: 1px solid rgba(232, 201, 122, 0.50);
     color: var(--cream); font-family: 'Cormorant Garamond', serif;
     font-size: 1rem; transition: all .3s; outline: none;
     -webkit-appearance: none; border-radius: 0;
+    box-shadow: 0 0 0 1px rgba(232, 201, 122, 0.08) inset;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(201, 168, 76, 0.35);
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: var(--gold); background: rgba(201,168,76,.08);
-    box-shadow: 0 0 0 3px rgba(201,168,76,.06);
+    border-color: var(--gold-light);
+    background: rgba(201,168,76,.10);
+    box-shadow: 0 0 0 3px rgba(232, 201, 122, 0.12),
+                0 0 16px rgba(201,168,76,.12);
 }
 
 .form-group textarea { resize: vertical; min-height: 140px; }
